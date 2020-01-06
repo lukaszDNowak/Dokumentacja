@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tablice</name>
+    </assembly>
+    <members>
+        <member name="M:Tablice.Program.wypiszDoString(System.UInt32[])">
+            <summary>
+            zwraca tablicę (w postaci string) zamieszczając jej elementy w nawiasie [ ... ] oddzielone przecinkami
+            </summary>
+            <param name="a">tablica niepusta</param>
+            <returns>reprezentacja tablicy w postaci string</returns>
+        </member>
+        <member name="M:Tablice.Program.equal(System.UInt32[],System.UInt32[])">
+            <summary>
+            Porównuje dwie tablice.
+            </summary>
+            <param name="a">pierwsza tablica do porównania</param>
+            <param name="b">druga tablica do porównania</param>
+            <returns>true - gdy tablice są takiego samego rozmiaru i zawierają te same elementy na tych samych miejscach; 
+                     false w przeciwnym przypadku</returns>
+        </member>
+        <member name="M:Tablice.Program.czyJest(System.UInt32[],System.UInt32)">
+            <summary>
+            Sprawdza, czy dany klucz jest w tablicy.
+            </summary>
+            <param name="a">tablica</param>
+            <param name="klucz">poszukiwana wartość</param>
+            <returns>true - jeśli poszukiwany klucz występuje w tablicy; false - w przeciwnym przypadku.</returns>
+        </member>
+        <member name="M:Tablice.Program.gdzieJest(System.UInt32[],System.UInt32)">
+            <summary>
+            Sprawdza, gdzie jest (indeks) dany klucz w tablicy. Jeśli nie ma, zwraca -1.
+            </summary>
+            <param name="a">tablica</param>
+            <param name="klucz">poszukiwana wartość</param>
+            <returns>indeks pierwszego wystąpienia poszukiwanego elementu; -1 jeśli nie występuje.</returns>
+        </member>
+        <member name="M:Tablice.Program.ileWystąpien(System.UInt32[],System.UInt32)">
+            <summary>
+            Zlicza liczbę wystąpień zadanego klucza w tablicy. Jeśli nie ma, zwraca -1.
+            </summary>
+            <param name="a">tablica</param>
+            <param name="klucz">poszukiwana wartość</param>
+            <returns>liczba wystąpień klucza w tablicy lub -1, jeśli klucz nie występuje</returns>
+        </member>
+        <member name="M:Tablice.Program.odwroc(System.UInt32[])">
+            <summary>
+            Odwraca tablicę: pierwszy staje się ostatnim, drugi - przedostatnim, ...
+            </summary>
+            <param name="a">tablica</param>
+        </member>
+        <member name="M:Tablice.Program.klonuj(System.UInt32[])">
+            <summary>
+            Tworzy duplikat tablicy zadanej jako argument.
+            </summary>
+            <param name="a">tablica dana, niepusta</param>
+            <returns>sklonowana tablica</returns>
+        </member>
+        <member name="M:Tablice.Program.minimum(System.UInt32[])">
+            <summary>
+            Wyznacza minimalną wartość w tablicy
+            </summary>
+            <param name="a">tablica niepusta</param>
+            <returns>wartość minimalna w tablicy</returns>
+        </member>
+        <member name="M:Tablice.Program.indexMinimum(System.UInt32[])">
+            <summary>
+            Wyznacza indeks elementu minimalnego tablicy
+            </summary>
+            <param name="a">tablica niepusta</param>
+            <returns>indeks minimalnego elementu tablicy</returns>
+        </member>
+        <member name="M:Tablice.Program.suma(System.UInt32[])">
+            <summary>
+            Oblicza sumę wszystkich elementów tablicy.
+            </summary>
+            <param name="a">tablica niepusta</param>
+            <returns>suma elementów tablicy</returns>
+        </member>
+        <member name="M:Tablice.Program.sredniaArytmetyczna(System.UInt32[])">
+            <summary>
+            Oblicza średnią arytmetyczną elementów tablicy.
+            </summary>
+            <param name="a">tablica</param>
+            <returns>średnia arytmetyczna elementów tablicy</returns>
+        </member>
+        <member name="M:Tablice.Program.mediana(System.UInt32[])">
+            <summary>
+            Wyznacza medianę liczb w tablicy
+            </summary>
+            <param name="a">tablica niepusta</param>
+            <returns>mediana (watość środkowa w tablicy posorowanej): https://pl.wikipedia.org/wiki/Mediana </returns>
+        </member>
+        <member name="M:Tablice.Program.modalna(System.UInt32[])">
+            <summary>
+            Modalna, dominanta (wartość występująca najczęściej)
+            </summary>
+            <param name="a">tablica</param>
+            <returns>modalna, lub -1 jeśli nie wystepuje</returns>
+        </member>
+    </members>
+</doc>
